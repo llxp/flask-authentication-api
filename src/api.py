@@ -16,7 +16,7 @@ app = Blueprint(
     __name__)
 
 ldap_host = os.getenv('LDAP_HOST', '192.168.6.1')
-users_cn = os.getenv('USERS_CN', 'CN=Users,DC=ad,DC=local')
+users_cn = os.getenv('USERS_CN', 'CN=Users,DC=ad,DC=lan')
 
 
 @app.route('/login', methods=['POST'])

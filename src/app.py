@@ -2,7 +2,7 @@ from flask import Flask
 import os
 from flask_cors import CORS
 
-from api import app as api
+from .api import app as api
 
 
 # create the flask application object
